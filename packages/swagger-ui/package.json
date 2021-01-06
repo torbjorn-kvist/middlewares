@@ -7,7 +7,10 @@
   "module": "swagger-ui.es.js",
   "typings": "swagger-ui.d.ts",
   "exports": {
-    ".": "./cjs/swagger-ui.cjs.js",
+    ".": {
+      "require":  "./cjs/swagger-ui.cjs.js",
+      "default": "./swagger-ui.es.js"
+    },
     "./module": "./swagger-ui.es.js",
     "./cjs/": "./cjs/"
   },

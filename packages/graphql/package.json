@@ -7,7 +7,10 @@
   "module": "graphql.es.js",
   "typings": "graphql.d.ts",
   "exports": {
-    ".": "./cjs/graphql.cjs.js",
+    ".": {
+      "require":  "./cjs/graphql.cjs.js",
+      "default": "./graphql.es.js"
+    },
     "./module": "./graphql.es.js",
     "./cjs/": "./cjs/"
   },

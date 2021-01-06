@@ -6,7 +6,10 @@
   "main": "cjs/passport.cjs.js",
   "module": "passport.es.js",
   "exports": {
-    ".": "./cjs/passport.cjs.js",
+    ".": {
+      "require":  "./cjs/passport.cjs.js",
+      "default": "./passport.es.js"
+    },
     "./module": "./passport.es.js",
     "./cjs/": "./cjs/"
   },
